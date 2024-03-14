@@ -1,0 +1,28 @@
+body {
+  background-image: linear-gradient(180deg, #ff7884, #7741ff);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.checkbox {
+  margin-right: 1rem;
+}
+
+.result-container {
+  color: #fff;
+}

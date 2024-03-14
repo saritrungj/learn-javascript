@@ -37,14 +37,41 @@ if(age >= 16) {
   console.log('You must be 16+ to has a license');
 }
 
+let age = 0;
+
+if(age >= 100) {
+  console.log(`You are TOO OLD to enter this site`);
+} else if (age === 0) {
+  console.log('You can not enter. You were just born');
+} else if(age >= 18) {
+  console.log(`You are old enough to enter this site`);
+} else if (age < 0) {
+  console.log(`Your age can'be below 0`);
+} else {
+  console.log(`You must be 18+ to enter this site`);
+}
+
 */
 
-let age = 18;
+const myText = document.getElementById('myText');
+const submitBtn = document.getElementById('mySubmit');
+const result = document.getElementById('result');
+let age;
 
-if(age >= 18) {
-  console.log('You are old enough to enter this site');
-} else if (age < 0) {
-  
-} else {
-  console.log('You must be 18+ to enter this site');
+submitBtn.onclick = () => {
+  age = myText.value;
+  age = Number(age);
+
+  if(age >= 100) {
+    result.textContent = `You are TOO OLD to enter this site`;
+  } else if (age === 0) {
+    result.textContent = 'You can not enter. You were just born';
+  } else if(age >= 18) {
+    result.textContent = `You are old enough to enter this site`;
+  } else if (age < 0) {
+    result.textContent = `Your age can'be below 0`;
+  } else {
+    result.textContent = `You must be 18+ to enter this site`;
+  }
 }
+

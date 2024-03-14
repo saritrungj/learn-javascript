@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Property</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="checkbox-container">
+      <div class="checkbox">
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Subscribe</label>
+        <input type="radio" name="card" id="visa-btn">
+        <label for="visa-btn">Visa</label>
+        <input type="radio" name="card" id="mastercard-btn">
+        <label for="mastercard-btn">MasterCard</label>
+        <input type="radio" name="card" id="paypal-btn">
+        <label for="paypal-btn">Paypal</label>
+      </div>
+      <button type="submit" id="mySubmit">Submit</button>
+    </div>
+    <div class="result-container">
+      <p id="sub-result"></p>
+      <p id="payment-result"></p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
