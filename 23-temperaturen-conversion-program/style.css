@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(90deg, #fa53fa, #b554ff);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.temperature-container .conversion-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.temperature-container h1 {
+  margin-bottom: 1rem;
+}
+
+.conversion-input div { 
+  display: flex;
+  align-items: center;
+}
+
+.conversion-input input[type=radio] {
+  width: 50px;
+  height: 1rem;
+  cursor: pointer;
+  transition: accent-color .3s, transform .3s;
+}
+
+.conversion-input input[type=radio]:hover {
+  transform: scale(1.05);
+  border: 3px solid #3c3ff8;
+  transition: accent-color .3s;
+}
+
+.conversion-input input[type=radio]:checked {
+  accent-color: #3c3ff8;
+}
+
+.temperature-container input[type=number] {
+  width: 250px;
+  font-size: 1.3rem;
+  text-indent: 1rem;
+  border-radius: 10px;
+  border: 3px solid #3c3ff8;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+
+.temperature-container input[type=number]:focus {
+  border: none;
+  outline: 3px solid #3c3ff8;
+}
+
+.temperature-container button {
+  width: 130px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #c23fff;
+  border: 3px solid #3c3ff8;
+  border-radius: 10px;
+  padding: .5rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.temperature-container button:hover {
+  transform: scale(1.05);
+}
+
+.temperature-container p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: .3rem 1rem;
+}
+
+.temperature-container span {
+  color: #3c3ff8;
+  font-size: 1.7rem;
+}
+
