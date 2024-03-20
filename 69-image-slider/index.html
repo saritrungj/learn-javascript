@@ -3,10 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Clock Program</title>
+  <title>Image Slider Program</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <div class="image-slider">
+      <div class="slides">
+        <img src="https://performance.ford.com/content/fordracing/home/enthusiasts/quick-look/2023/02/2024-dark-horse-at-philly-auto-show/_jcr_content/fr-contentItem/image.img.jpg/1675883759464.jpg" alt="" class="slide">
+        <img src="https://performance.ford.com/content/dam/fordracing/enthusiasts/Quick%20Look/2023/02/DarkHorse/24-DarkHorse.jpg" alt="" class="slide">
+        <img src="https://performance.ford.com/content/dam/fordracing/enthusiasts/Quick%20Look/2023/02/DarkHorse/06-DarkHorse.jpg" alt="" class="slide">
+      </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+  </div>
   <script src="index.js"></script>
 </body>
 </html>
