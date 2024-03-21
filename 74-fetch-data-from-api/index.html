@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Clock Program</title>
+  <title>Fetch data from an API</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div class="container">
+    <div class="pokemon-search-container">
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png"
+          alt="poke-logo">
+      </div>
+      <div class="input">
+        <input type="text" id="poke-name-input" placeholder="Enter Pokemon name">
+        <button onclick="fetchData()">Fetch Pokemon</button>
+      </div>
+      <div class="result-poke-data">
+        <img src="" alt="Pokemon Sprite" id="poke-sprites" style="display: none;">
+        <div class="detail-data">
+          <div class="poke-abilities">
+            <h3 id="h3-abilities" style="display: none;">Abilities</h3>
+            <ul id="poke-abilities"></ul>
+          </div>
+          <div class="poke-types">
+            <h3 id="h3-types" style="display: none;">Types</h3>
+            <ul id="poke-types">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="index.js"></script>
 </body>
+
 </html>

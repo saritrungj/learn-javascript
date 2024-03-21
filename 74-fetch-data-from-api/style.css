@@ -6,3 +6,99 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  background-image: linear-gradient(90deg, red, orangered);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.pokemon-search-container .logo img {
+  width: 500px;
+  margin-bottom: 2rem;
+}
+
+.pokemon-search-container .input {
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-search-container .input input[type=text] {
+  font-size: 1.5rem;
+  text-indent: .7rem;
+  background-color: #e3e3e3;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-right: 1rem;
+}
+
+.pokemon-search-container .input button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: yellowgreen;
+  border: none;
+  border-radius: 5px;
+  padding: .65rem 1rem;
+  transition: transform .15s;
+  cursor: pointer;
+}
+
+.input button:hover {
+  transform: scale(.95);
+}
+
+.result-poke-data {
+  display: flex;
+  align-items: center;
+}
+
+.result-poke-data {
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.result-poke-data img {
+  width: 225px;
+  margin-right: 2rem;
+}
+
+.poke-abilities ul {
+  display: flex;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.poke-abilities ul {
+  list-style: none;
+}
+
+.poke-types ul {
+  display: flex;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.poke-types ul {
+  list-style: none;
+}
