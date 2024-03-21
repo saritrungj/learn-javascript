@@ -6,3 +6,94 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  background-image: linear-gradient(90deg, green , yellow);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(120deg, green , yellow);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.weather-app-container form {
+  margin-bottom: 1rem;
+}
+
+.weather-form input {
+  font-size: 1.2rem;
+  text-indent: .7rem;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-right: .7rem;
+}
+
+.weather-form button {
+  background-color: tomato;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  margin-right: .5rem;
+  transition: transform .15s;
+  cursor: pointer;
+}
+
+.weather-form button:hover {
+  transform: scale(.95);
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.card h1 {
+  font-size: 5rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card .temp-display {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.card .weather-emoji {
+  font-size: 4rem;
+}
+
+.card .error-display {
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
